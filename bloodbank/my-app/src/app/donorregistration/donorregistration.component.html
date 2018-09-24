@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <form [formGroup]="registrationForm" (ngSubmit)="submit()" method="post">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <br/>
+                        <input type="text" class="form-control" formControlName ="fullname" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="fathername">Father's Name</label>
+                        <br/>
+                        <input type="text" class="form-control" formControlName ="fathersname" placeholder="Enter Father's Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <br/>
+                        <input type="text" class="form-control" formControlName ="age" placeholder="Enter Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Address</label>
+                        <textarea class="form-control" formControlName="address" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleSelect2">Select Blood Group</label>
+                        <select class="form-control" formControlName="bloodgroup" id="exampleSelect2">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>AB</option>
+                        <option>O</option>
+                        </select>
+                    </div>
+                      
+                        <button type="submit" name="save" class="btn btn-primary">Save</button>
+                        
+                </fieldset>
+            
+              </form>
+        </div>
+    </div>
+</div>
+
+

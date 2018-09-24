@@ -1,0 +1,27 @@
+<h1>Welcome Admin</h1>
+<p><a href="logout.php" class="btn btn-primary">Logout</a></p>
+<br />
+<div  class="btn-group-center" data-toggle="buttons" id="content">
+  <a href="http://localhost:4200/donorregistration" class="mb-2 btn btn-primary w-25 mx-auto d-block" (click)="donor_registration()">Click Here For Donor Registration</a>
+  <a href="http://localhost:4200/donorlist" class="mb-2 btn btn-primary w-25 mx-auto d-block" (click)="donor_list()">Click Here For Donor List</a>
+
+  <a href="" class="mb-2 btn btn-primary w-25 mx-auto d-block ">Click Here To Check Stock Blood List</a>
+  <a href="" class="mb-2 btn btn-primary  w-25 mx-auto d-block ">Click Here To Exchange Blood List</a>
+</div>
+
+<div *ngFor="let donor of donors">
+
+  <table class="table table-hover">
+    <tbody>
+      <tr class="table-primary">
+        <td>{{donor.id}}</td>
+        <td>{{donor.fullname}}</td>
+        <td>{{donor.fathersname}}</td>
+        <td>{{donor.fathersname}}</td>
+        <td>{{donor.age}}</td>
+        <td>{{donor.bloodgroup}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,14 @@
+
+#footer{
+    margin-top:30px;
+    padding: 10px;
+    color:white;
+    background:	#ED6764;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+body {
+    padding-bottom: 60px;
+}
